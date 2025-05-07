@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="author" content="Group 3">
+   <meta name="keywords" content="HTML, CSS, JavaScript">
+   <meta name="revised" content="01-22-25">
+   <title>Equation X Explosion</title>
+   <link rel="stylesheet" href="style.css" />  
+   
+ </head>
+ <body onload="move()">  
+
+
+    <div style="margin: -10px; align-content: center;">
+        
+      <video autoplay muted loop id='backgroundvideo'>
+        <source src="csprojimage.mp4" type="video/mp4">
+          your browser does no support HTML5 video.
+      </video>
+    </div>
+
+    <div class="topnav">
+      <div class="logo">
+        <img src="./projphotos/logoproj.png" alt="Website Logo">
+      </div>      
+      <a class="active" href="./index.html">Home</a>    
+      <div class="topnav-right">
+        <a href="./About.html">About</a>
+        <a href="./contacts.html">Contacts</a>
+      </div>
+    </div>
+ 
+
+    
+    <div id="displayScore">
+      <h2 id="displayScore_Label">Hi score to beat</h2>
+    </div>
+  
+    <div id="myProgress">
+      <div id="myBar"></div>
+    </div>
+  
+   <!-- <div id="highscore-board">
+     <h2>HI SCORE</h2>
+     <ol id="score-list">
+       <li>Loading...</li>
+     </ol>
+   </div> -->
+ 
+   <div class="container">
+     <form class="box" onsubmit="saveInfoAndStart(event)">
+       <h2 id="title" style="font-family: 'Dancing Script', cursive;">Start Your Quiz</h2>
+       <div class="form-group">
+         <label for="name">Your Name:</label>
+         <input type="text" id="name" required />
+       </div>
+ 
+       <div class="form-group">
+         <label>Select Difficulty:</label>
+         <div class="button-group" id="difficulty-group">
+           <input type="button" value="Easy" onclick="chooseDifficulty('easy', this)" />
+           <input type="button" value="Medium" onclick="chooseDifficulty('medium', this)" />
+           <input type="button" value="Hard" onclick="chooseDifficulty('hard', this)" />
+         </div>
+       </div>
+ 
+       <div class="form-group">
+         <label>Select Topic:</label>
+         <div class="button-group" id="topic-group">
+           <input type="button" value="Algebra" onclick="chooseTopic('Algebra', this)" />
+           <input type="button" value="Geometry" onclick="chooseTopic('Geometry', this)" />
+           <input type="button" value="Statistics" onclick="chooseTopic('Statistics', this)" />
+           <input type="button" value="Theory" onclick="chooseTopic('Theory', this)" />
+           <input type="button" value="Trigonometry" onclick="chooseTopic('Trigonometry', this)" />
+         </div>
+       </div>
+ 
+       <div class="form-group play-button">
+         <!-- <input type="submit" value="Play" onclick="document.location='quiz.html'"/> -->
+         <input type="submit" value="Play"/>
+       </div>
+     </form>
+   </div>
+
+   
+ 
+   <footer>
+    <p>Copyright ©group3. All rights reserved.</p>
+   </footer>
+ 
+   <script src="js/index.js"></script>
+    
+ </body>
+ </html>

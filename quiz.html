@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">	
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Group 3">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="revised" content="01-22-25">
+  <title>Equation X Explosion Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  
+
+  <script src="js/quiz.js"></script>
+  
+</head>
+<body onload="move()">  
+
+
+    <div style="margin: -10px; align-content: center;">
+        
+      <video autoplay muted loop id='backgroundvideo'>
+        <source src="csprojimage.mp4" type="video/mp4">
+          your browser does no support HTML5 video.
+      </video>
+    </div>
+
+    <div class="topnav">
+      <div class="logo">
+        <img src="./projphotos/logoproj.png" alt="Website Logo">
+      </div>      
+      <a class="active" href="./index.html">Home</a>    
+      <div class="topnav-right">
+        <a href="./About.html">About</a>
+        <a href="./contacts.html">Contacts</a>
+      </div>
+	  </div>
+    <div id="welcomeLabel">
+      <p id="welcome_user" style="margin-top: -5px;"></p>
+    </div>
+	  <div id="myProgress">
+		  <div id="myBar"></div>
+	  </div>
+ 
+   <div class="container" style="font-size: 40px;">
+      <div id="question-container"></div>
+      <div id="answer-buttons"></div>
+      <div id="input-field"></div>
+      
+   </div>
+ 
+   <footer>
+    <p>Copyright ©group3. All rights reserved.</p>
+   </footer>
+
+  
+</body>
+</html>
